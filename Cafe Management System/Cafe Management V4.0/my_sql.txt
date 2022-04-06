@@ -1,0 +1,15 @@
+create database cafe;
+
+use cafe;
+
+create table items(name varchar(40) not null,price varchar(5) not null);
+
+create table management(management_id varchar(20) not null,password varchar(15) not null,contact_no varchar(10) primary key);
+
+create table user(user_id varchar(20) not null unique,user_password varchar(15) not null,contact_no varchar(10) primary key,address varchar(150) not null,pincode varchar(6) not null);
+
+create table orders(user_id varchar(15) not null,items varchar(350) not null,total_price varchar(5) ,address varchar(150) not null,order_date date not null,status varchar(12) not null);
+
+insert into management values("abc","12345","1234567891");
+
+insert into items values(),(),(),(),();
